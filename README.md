@@ -19,9 +19,9 @@ This project is organized in several folders:
 * **best-model-genie**. For ease of use, it contains the best model in GENIE format. This model is necessary for executing the article's probabilistic inference analysis.
 
 ## Usage
-* [Project installation]()
-* [Overview and execution of the experiments]()
-* [Analysis of the results using the tool Genie]()
+* [Project installation](https://github.com/ferjorosa/parkinson-multidimensional-clustering/wiki/Project-installation)
+* [Overview and execution of the experiments](https://github.com/ferjorosa/parkinson-multidimensional-clustering/wiki/Executing-experiments)
+* [Analysis of the results using the tool Genie](https://github.com/ferjorosa/parkinson-multidimensional-clustering/wiki/Analysis-with-Genie)
 
 ## Disclaimer
 The data provided by this repository should not be used for independent publications without the approval of the Movement disorders society. 
