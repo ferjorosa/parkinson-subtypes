@@ -1,0 +1,979 @@
+"C:\Program Files\Java\jdk1.8.0_101\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2020.1.2\lib\idea_rt.jar=54545:C:\Program Files\JetBrains\IntelliJ IDEA 2020.1.2\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_101\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\rt.jar;D:\parkinson-subtypes-new\target\scala-2.13\classes;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\colt\colt\1.2.0\colt-1.2.0.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\errorprone\error_prone_annotations\2.2.0\error_prone_annotations-2.2.0.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\guava\guava\27.1-jre\guava-27.1-jre.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\commons-cli\commons-cli\1.2\commons-cli-1.2.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\concurrent\concurrent\1.3.4\concurrent-1.3.4.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\commons\commons-lang3\3.6\commons-lang3-3.6.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\checkerframework\checker-qual\2.5.2\checker-qual-2.5.2.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\codehaus\mojo\animal-sniffer-annotations\1.17\animal-sniffer-annotations-1.17.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.4\scala-library-2.13.4.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\slf4j\slf4j-api\1.7.26\slf4j-api-1.7.26.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\slf4j\slf4j-simple\1.7.26\slf4j-simple-1.7.26.jar" scripts.Learn_GLCM
+
+==========================
+GLCM
+==========================
+
+
+Cardinality 2
+BIC: 7008.037200708624
+Log-likelihood: 7298.865127006647
+Time: 6051 ms
+
+Cardinality 3
+BIC: 7519.329144449215
+Log-likelihood: 7957.070146918403
+Time: 7013 ms
+
+Cardinality 4
+BIC: 7928.108964465226
+Log-likelihood: 8512.76304310558
+Time: 7568 ms
+
+Cardinality 5
+BIC: 8076.819121223749
+Log-likelihood: 8808.38627603527
+Time: 10299 ms
+
+Cardinality 6
+BIC: 8051.202085122499
+Log-likelihood: 8929.682316105185
+Time: 10956 ms
+SCORE STOPPED IMPROVING
+
+---------------------------------------------
+Log-Likelihood: 8808.38627603527
+BIC: 8076.819121223749
+Learning time (ms): 41888 ms
+Learning time (s): 41.0 s
+
+
+ ============================================
+BayesNet212 {
+	number of nodes = 25;
+	nodes = {
+		P(depression(c)| variable99) {
+CGPotential
+[CGParameter
+1.0
+1 x 1 matrix
+0.230115
+1 x 1 matrix
+0.045495
+, CGParameter
+1.0
+1 x 1 matrix
+0.015449
+1 x 1 matrix
+0.000874
+, CGParameter
+1.0
+1 x 1 matrix
+0.007627
+1 x 1 matrix
+0.000874
+, CGParameter
+1.0
+1 x 1 matrix
+0.027569
+1 x 1 matrix
+0.001427
+, CGParameter
+1.0
+1 x 1 matrix
+0.110675
+1 x 1 matrix
+0.012195
+]
+		};
+		P(anxiety(c)| variable99) {
+CGPotential
+[CGParameter
+1.0
+1 x 1 matrix
+0.244
+1 x 1 matrix
+0.036769
+, CGParameter
+1.0
+1 x 1 matrix
+0.068545
+1 x 1 matrix
+0.009112
+, CGParameter
+1.0
+1 x 1 matrix
+0.016526
+1 x 1 matrix
+0.00087
+, CGParameter
+1.0
+1 x 1 matrix
+0.046038
+1 x 1 matrix
+0.002824
+, CGParameter
+1.0
+1 x 1 matrix
+0.13029
+1 x 1 matrix
+0.011849
+]
+		};
+		P(apathy(c)| variable99) {
+CGPotential
+[CGParameter
+1.0
+1 x 1 matrix
+0.230319
+1 x 1 matrix
+0.051175
+, CGParameter
+1.0
+1 x 1 matrix
+0.023397
+1 x 1 matrix
+0.001514
+, CGParameter
+1.0
+1 x 1 matrix
+0.006718
+1 x 1 matrix
+0.001096
+, CGParameter
+1.0
+1 x 1 matrix
+0.07068
+1 x 1 matrix
+0.012948
+, CGParameter
+1.0
+1 x 1 matrix
+0.126314
+1 x 1 matrix
+0.020182
+]
+		};
+		P(psychosis(c)| variable99) {
+CGPotential
+[CGParameter
+1.0
+1 x 1 matrix
+0.068463
+1 x 1 matrix
+0.011407
+, CGParameter
+1.0
+1 x 1 matrix
+0.002609
+1 x 1 matrix
+0.000196
+, CGParameter
+1.0
+1 x 1 matrix
+0.002551
+1 x 1 matrix
+0.000196
+, CGParameter
+1.0
+1 x 1 matrix
+0.01505
+1 x 1 matrix
+0.000894
+, CGParameter
+1.0
+1 x 1 matrix
+0.049616
+1 x 1 matrix
+0.005259
+]
+		};
+		P(impulse_control(c)| variable99) {
+CGPotential
+[CGParameter
+1.0
+1 x 1 matrix
+0.045219
+1 x 1 matrix
+0.006775
+, CGParameter
+1.0
+1 x 1 matrix
+0.00114
+1 x 1 matrix
+0.000117
+, CGParameter
+1.0
+1 x 1 matrix
+0.000952
+1 x 1 matrix
+0.000117
+, CGParameter
+1.0
+1 x 1 matrix
+0.042688
+1 x 1 matrix
+0.004454
+, CGParameter
+1.0
+1 x 1 matrix
+0.00124
+1 x 1 matrix
+0.000117
+]
+		};
+		P(cognition(c)| variable99) {
+CGPotential
+[CGParameter
+1.0
+1 x 1 matrix
+0.237714
+1 x 1 matrix
+0.02619
+, CGParameter
+1.0
+1 x 1 matrix
+0.029453
+1 x 1 matrix
+0.000783
+, CGParameter
+1.0
+1 x 1 matrix
+0.024574
+1 x 1 matrix
+0.001006
+, CGParameter
+1.0
+1 x 1 matrix
+0.085685
+1 x 1 matrix
+0.005192
+, CGParameter
+1.0
+1 x 1 matrix
+0.158008
+1 x 1 matrix
+0.015085
+]
+		};
+		P(hypotension(c)| variable99) {
+CGPotential
+[CGParameter
+1.0
+1 x 1 matrix
+0.159896
+1 x 1 matrix
+0.035165
+, CGParameter
+1.0
+1 x 1 matrix
+0.028107
+1 x 1 matrix
+0.001459
+, CGParameter
+1.0
+1 x 1 matrix
+0.012926
+1 x 1 matrix
+0.000994
+, CGParameter
+1.0
+1 x 1 matrix
+0.065032
+1 x 1 matrix
+0.01127
+, CGParameter
+1.0
+1 x 1 matrix
+0.112682
+1 x 1 matrix
+0.030399
+]
+		};
+		P(urinary(c)| variable99) {
+CGPotential
+[CGParameter
+1.0
+1 x 1 matrix
+0.280305
+1 x 1 matrix
+0.060937
+, CGParameter
+1.0
+1 x 1 matrix
+0.174573
+1 x 1 matrix
+0.047562
+, CGParameter
+1.0
+1 x 1 matrix
+0.053199
+1 x 1 matrix
+0.005727
+, CGParameter
+1.0
+1 x 1 matrix
+0.087406
+1 x 1 matrix
+0.008684
+, CGParameter
+1.0
+1 x 1 matrix
+0.235149
+1 x 1 matrix
+0.035531
+]
+		};
+		P(sexual(c)| variable99) {
+CGPotential
+[CGParameter
+1.0
+1 x 1 matrix
+0.2999
+1 x 1 matrix
+0.11064
+, CGParameter
+1.0
+1 x 1 matrix
+0.049405
+1 x 1 matrix
+0.008192
+, CGParameter
+1.0
+1 x 1 matrix
+0.041219
+1 x 1 matrix
+0.0099
+, CGParameter
+1.0
+1 x 1 matrix
+0.079596
+1 x 1 matrix
+0.016602
+, CGParameter
+1.0
+1 x 1 matrix
+0.29355
+1 x 1 matrix
+0.095676
+]
+		};
+		P(gastrointestinal(c)| variable99) {
+CGPotential
+[CGParameter
+1.0
+1 x 1 matrix
+0.183609
+1 x 1 matrix
+0.032497
+, CGParameter
+1.0
+1 x 1 matrix
+0.102254
+1 x 1 matrix
+0.012435
+, CGParameter
+1.0
+1 x 1 matrix
+0.024151
+1 x 1 matrix
+0.001243
+, CGParameter
+1.0
+1 x 1 matrix
+0.069896
+1 x 1 matrix
+0.005168
+, CGParameter
+1.0
+1 x 1 matrix
+0.134252
+1 x 1 matrix
+0.013255
+]
+		};
+		P(sleep(c)| variable99) {
+CGPotential
+[CGParameter
+1.0
+1 x 1 matrix
+0.229121
+1 x 1 matrix
+0.024808
+, CGParameter
+1.0
+1 x 1 matrix
+0.090457
+1 x 1 matrix
+0.005818
+, CGParameter
+1.0
+1 x 1 matrix
+0.040639
+1 x 1 matrix
+0.001875
+, CGParameter
+1.0
+1 x 1 matrix
+0.104132
+1 x 1 matrix
+0.007207
+, CGParameter
+1.0
+1 x 1 matrix
+0.154426
+1 x 1 matrix
+0.012755
+]
+		};
+		P(pain(c)| variable99) {
+CGPotential
+[CGParameter
+1.0
+1 x 1 matrix
+0.230093
+1 x 1 matrix
+0.034916
+, CGParameter
+1.0
+1 x 1 matrix
+0.115061
+1 x 1 matrix
+0.014226
+, CGParameter
+1.0
+1 x 1 matrix
+0.046203
+1 x 1 matrix
+0.00358
+, CGParameter
+1.0
+1 x 1 matrix
+0.102087
+1 x 1 matrix
+0.013324
+, CGParameter
+1.0
+1 x 1 matrix
+0.176874
+1 x 1 matrix
+0.027726
+]
+		};
+		P(weight_loss(c)| variable99) {
+CGPotential
+[CGParameter
+1.0
+1 x 1 matrix
+0.216552
+1 x 1 matrix
+0.105892
+, CGParameter
+1.0
+1 x 1 matrix
+0.101238
+1 x 1 matrix
+0.049374
+, CGParameter
+1.0
+1 x 1 matrix
+8.605279E-012
+1 x 1 matrix
+0.001685
+, CGParameter
+1.0
+1 x 1 matrix
+0.000895
+1 x 1 matrix
+0.001685
+, CGParameter
+1.0
+1 x 1 matrix
+1.328858E-005
+1 x 1 matrix
+0.001685
+]
+		};
+		P(smell(c)| variable99) {
+CGPotential
+[CGParameter
+1.0
+1 x 1 matrix
+0.51755
+1 x 1 matrix
+0.15117
+, CGParameter
+1.0
+1 x 1 matrix
+0.3512
+1 x 1 matrix
+0.154853
+, CGParameter
+1.0
+1 x 1 matrix
+0.25013
+1 x 1 matrix
+0.109499
+, CGParameter
+1.0
+1 x 1 matrix
+0.483564
+1 x 1 matrix
+0.16121
+, CGParameter
+1.0
+1 x 1 matrix
+0.431917
+1 x 1 matrix
+0.173979
+]
+		};
+		P(physical_tiredness(c)| variable99) {
+CGPotential
+[CGParameter
+1.0
+1 x 1 matrix
+0.462721
+1 x 1 matrix
+0.101551
+, CGParameter
+1.0
+1 x 1 matrix
+0.180769
+1 x 1 matrix
+0.054874
+, CGParameter
+1.0
+1 x 1 matrix
+0.021916
+1 x 1 matrix
+0.003744
+, CGParameter
+1.0
+1 x 1 matrix
+0.180409
+1 x 1 matrix
+0.047834
+, CGParameter
+1.0
+1 x 1 matrix
+0.305831
+1 x 1 matrix
+0.07812
+]
+		};
+		P(mental_fatigue(c)| variable99) {
+CGPotential
+[CGParameter
+1.0
+1 x 1 matrix
+0.317379
+1 x 1 matrix
+0.087544
+, CGParameter
+1.0
+1 x 1 matrix
+0.007053
+1 x 1 matrix
+0.001768
+, CGParameter
+1.0
+1 x 1 matrix
+0.004335
+1 x 1 matrix
+0.001768
+, CGParameter
+1.0
+1 x 1 matrix
+0.053998
+1 x 1 matrix
+0.008814
+, CGParameter
+1.0
+1 x 1 matrix
+0.136673
+1 x 1 matrix
+0.028044
+]
+		};
+		P(sweating(c)| variable99) {
+CGPotential
+[CGParameter
+1.0
+1 x 1 matrix
+0.240579
+1 x 1 matrix
+0.098337
+, CGParameter
+1.0
+1 x 1 matrix
+0.007629
+1 x 1 matrix
+0.001691
+, CGParameter
+1.0
+1 x 1 matrix
+0.002428
+1 x 1 matrix
+0.001691
+, CGParameter
+1.0
+1 x 1 matrix
+0.14585
+1 x 1 matrix
+0.04685
+, CGParameter
+1.0
+1 x 1 matrix
+0.00975
+1 x 1 matrix
+0.001691
+]
+		};
+		P(tremor(c)| variable99) {
+CGPotential
+[CGParameter
+1.0
+1 x 1 matrix
+0.122933
+1 x 1 matrix
+0.012467
+, CGParameter
+1.0
+1 x 1 matrix
+0.128587
+1 x 1 matrix
+0.009227
+, CGParameter
+1.0
+1 x 1 matrix
+0.123097
+1 x 1 matrix
+0.011348
+, CGParameter
+1.0
+1 x 1 matrix
+0.125301
+1 x 1 matrix
+0.011748
+, CGParameter
+1.0
+1 x 1 matrix
+0.154119
+1 x 1 matrix
+0.01954
+]
+		};
+		P(rigidity(c)| variable99) {
+CGPotential
+[CGParameter
+1.0
+1 x 1 matrix
+0.224639
+1 x 1 matrix
+0.030985
+, CGParameter
+1.0
+1 x 1 matrix
+0.205784
+1 x 1 matrix
+0.032887
+, CGParameter
+1.0
+1 x 1 matrix
+0.144034
+1 x 1 matrix
+0.01303
+, CGParameter
+1.0
+1 x 1 matrix
+0.186055
+1 x 1 matrix
+0.018157
+, CGParameter
+1.0
+1 x 1 matrix
+0.220008
+1 x 1 matrix
+0.037919
+]
+		};
+		P(dyskinesias(c)| variable99) {
+CGPotential
+[CGParameter
+1.0
+1 x 1 matrix
+0.185557
+1 x 1 matrix
+0.06242
+, CGParameter
+1.0
+1 x 1 matrix
+0.076754
+1 x 1 matrix
+0.022639
+, CGParameter
+1.0
+1 x 1 matrix
+0.002335
+1 x 1 matrix
+0.001165
+, CGParameter
+1.0
+1 x 1 matrix
+0.052223
+1 x 1 matrix
+0.008985
+, CGParameter
+1.0
+1 x 1 matrix
+0.070594
+1 x 1 matrix
+0.016444
+]
+		};
+		P(fluctuations(c)| variable99) {
+CGPotential
+[CGParameter
+1.0
+1 x 1 matrix
+0.294825
+1 x 1 matrix
+0.051598
+, CGParameter
+1.0
+1 x 1 matrix
+0.135538
+1 x 1 matrix
+0.034094
+, CGParameter
+1.0
+1 x 1 matrix
+0.064691
+1 x 1 matrix
+0.011549
+, CGParameter
+1.0
+1 x 1 matrix
+0.181331
+1 x 1 matrix
+0.026642
+, CGParameter
+1.0
+1 x 1 matrix
+0.196811
+1 x 1 matrix
+0.036385
+]
+		};
+		P(bradykinesia(c)| variable99) {
+CGPotential
+[CGParameter
+1.0
+1 x 1 matrix
+0.360991
+1 x 1 matrix
+0.033276
+, CGParameter
+1.0
+1 x 1 matrix
+0.253146
+1 x 1 matrix
+0.022776
+, CGParameter
+1.0
+1 x 1 matrix
+0.227459
+1 x 1 matrix
+0.024638
+, CGParameter
+1.0
+1 x 1 matrix
+0.25263
+1 x 1 matrix
+0.014711
+, CGParameter
+1.0
+1 x 1 matrix
+0.357287
+1 x 1 matrix
+0.033421
+]
+		};
+		P(axial_no_pigd(c)| variable99) {
+CGPotential
+[CGParameter
+1.0
+1 x 1 matrix
+0.33063
+1 x 1 matrix
+0.029099
+, CGParameter
+1.0
+1 x 1 matrix
+0.211755
+1 x 1 matrix
+0.015423
+, CGParameter
+1.0
+1 x 1 matrix
+0.128367
+1 x 1 matrix
+0.010113
+, CGParameter
+1.0
+1 x 1 matrix
+0.197736
+1 x 1 matrix
+0.013885
+, CGParameter
+1.0
+1 x 1 matrix
+0.304202
+1 x 1 matrix
+0.020248
+]
+		};
+		P(pigd(c)| variable99) {
+CGPotential
+[CGParameter
+1.0
+1 x 1 matrix
+0.330719
+1 x 1 matrix
+0.054232
+, CGParameter
+1.0
+1 x 1 matrix
+0.233567
+1 x 1 matrix
+0.037354
+, CGParameter
+1.0
+1 x 1 matrix
+0.12657
+1 x 1 matrix
+0.012143
+, CGParameter
+1.0
+1 x 1 matrix
+0.175328
+1 x 1 matrix
+0.018589
+, CGParameter
+1.0
+1 x 1 matrix
+0.259306
+1 x 1 matrix
+0.032537
+]
+		};
+		P(variable99(5)) {
+function {
+	dimension = 1;
+	variables = { "variable99" };
+	domain size = 5;
+	cells = [
+		f( "state0" ) = 0.17296979
+		f( "state1" ) = 0.17216957
+		f( "state2" ) = 0.28541437
+		f( "state3" ) = 0.16480719
+		f( "state4" ) = 0.20463908
+	];
+};
+
+		};
+	};
+	number of edges = 24;
+	edges = {
+		edge {
+			head = "depression";
+			tail = "variable99";
+		};
+		edge {
+			head = "anxiety";
+			tail = "variable99";
+		};
+		edge {
+			head = "apathy";
+			tail = "variable99";
+		};
+		edge {
+			head = "psychosis";
+			tail = "variable99";
+		};
+		edge {
+			head = "impulse_control";
+			tail = "variable99";
+		};
+		edge {
+			head = "cognition";
+			tail = "variable99";
+		};
+		edge {
+			head = "hypotension";
+			tail = "variable99";
+		};
+		edge {
+			head = "urinary";
+			tail = "variable99";
+		};
+		edge {
+			head = "sexual";
+			tail = "variable99";
+		};
+		edge {
+			head = "gastrointestinal";
+			tail = "variable99";
+		};
+		edge {
+			head = "sleep";
+			tail = "variable99";
+		};
+		edge {
+			head = "pain";
+			tail = "variable99";
+		};
+		edge {
+			head = "weight_loss";
+			tail = "variable99";
+		};
+		edge {
+			head = "smell";
+			tail = "variable99";
+		};
+		edge {
+			head = "physical_tiredness";
+			tail = "variable99";
+		};
+		edge {
+			head = "mental_fatigue";
+			tail = "variable99";
+		};
+		edge {
+			head = "sweating";
+			tail = "variable99";
+		};
+		edge {
+			head = "tremor";
+			tail = "variable99";
+		};
+		edge {
+			head = "rigidity";
+			tail = "variable99";
+		};
+		edge {
+			head = "dyskinesias";
+			tail = "variable99";
+		};
+		edge {
+			head = "fluctuations";
+			tail = "variable99";
+		};
+		edge {
+			head = "bradykinesia";
+			tail = "variable99";
+		};
+		edge {
+			head = "axial_no_pigd";
+			tail = "variable99";
+		};
+		edge {
+			head = "pigd";
+			tail = "variable99";
+		};
+	};
+};
+
+
+Process finished with exit code 0

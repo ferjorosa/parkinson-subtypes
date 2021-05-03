@@ -1,0 +1,660 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!-- This network was created in GeNIe Academic, which can be used for educational and research purposes only -->
+<smile version="1.0" id="DAG" numsamples="10000" discsamples="10000">
+	<nodes>
+		<cpt id="LV_120492">
+			<state id="x0" />
+			<state id="x1" />
+			<probabilities>0.1897364062532209 0.8102635937467791</probabilities>
+		</cpt>
+		<cpt id="LV_120465">
+			<state id="x0" />
+			<state id="x1" />
+			<probabilities>0.2687787060447497 0.7312212939552503</probabilities>
+		</cpt>
+		<cpt id="LV_120349">
+			<state id="x0" />
+			<state id="x1" />
+			<probabilities>0.2211950415028812 0.7788049584971188</probabilities>
+		</cpt>
+		<cpt id="LV_120267">
+			<state id="x0" />
+			<state id="x1" />
+			<parents>LV_120349</parents>
+			<probabilities>0.6253804744785314 0.3746195255214687 0.3905584348844301 0.6094415651155698</probabilities>
+		</cpt>
+		<cpt id="LV_60235">
+			<state id="x0" />
+			<state id="x1" />
+			<parents>LV_120267</parents>
+			<probabilities>0.6717005519617856 0.3282994480382145 0.186352389013196 0.813647610986804</probabilities>
+		</cpt>
+		<cpt id="LV_60109">
+			<state id="x0" />
+			<state id="x1" />
+			<parents>LV_120267</parents>
+			<probabilities>0.6068902214220402 0.3931097785779598 0.8335610838020725 0.1664389161979275</probabilities>
+		</cpt>
+		<equation id="pigd">
+			<parents>LV_60109</parents>
+			<definition lower="0" upper="0.85">pigd=Choose(LV_60109,Normal(0.187663,0.0286095),Normal(0.295127,0.0449026))</definition>
+			<discretization>
+				<interval upper="0.08499999999999999" />
+				<interval upper="0.17" />
+				<interval upper="0.255" />
+				<interval upper="0.34" />
+				<interval upper="0.4249999999999999" />
+				<interval upper="0.5099999999999999" />
+				<interval upper="0.5949999999999999" />
+				<interval upper="0.6799999999999998" />
+				<interval upper="0.7649999999999998" />
+				<interval upper="0.85" />
+			</discretization>
+		</equation>
+		<equation id="axial_no_pigd">
+			<parents>LV_120465</parents>
+			<definition lower="0" upper="0.8571428571428571">axial_no_pigd=Choose(LV_120465,Normal(0.31899,0.0296739),Normal(0.190822,0.0162171))</definition>
+			<discretization>
+				<interval upper="0.08571428571428572" />
+				<interval upper="0.1714285714285714" />
+				<interval upper="0.2571428571428571" />
+				<interval upper="0.3428571428571429" />
+				<interval upper="0.4285714285714286" />
+				<interval upper="0.5142857142857143" />
+				<interval upper="0.6000000000000001" />
+				<interval upper="0.6857142857142858" />
+				<interval upper="0.7714285714285716" />
+				<interval upper="0.8571428571428571" />
+			</discretization>
+		</equation>
+		<equation id="bradykinesia">
+			<parents>axial_no_pigd</parents>
+			<definition lower="0" upper="0.8863636363636364">bradykinesia=0.650268*axial_no_pigd+Normal(0.139437,0.0249694)</definition>
+			<discretization>
+				<interval upper="0.08863636363636364" />
+				<interval upper="0.1772727272727273" />
+				<interval upper="0.2659090909090909" />
+				<interval upper="0.3545454545454546" />
+				<interval upper="0.4431818181818182" />
+				<interval upper="0.5318181818181819" />
+				<interval upper="0.6204545454545455" />
+				<interval upper="0.7090909090909091" />
+				<interval upper="0.7977272727272727" />
+				<interval upper="0.8863636363636364" />
+			</discretization>
+		</equation>
+		<equation id="fluctuations">
+			<definition lower="0" upper="0.8125">fluctuations=Normal(0.162718,0.0361786)</definition>
+			<discretization>
+				<interval upper="0.08125" />
+				<interval upper="0.1625" />
+				<interval upper="0.24375" />
+				<interval upper="0.325" />
+				<interval upper="0.40625" />
+				<interval upper="0.4875" />
+				<interval upper="0.56875" />
+				<interval upper="0.65" />
+				<interval upper="0.7312500000000001" />
+				<interval upper="0.8125" />
+			</discretization>
+		</equation>
+		<equation id="dyskinesias">
+			<parents>LV_60109</parents>
+			<definition lower="0" upper="1">dyskinesias=Choose(LV_60109,Normal(0.000231973,9.42506e-05),Normal(0.2614,0.0379373))</definition>
+			<discretization>
+				<interval upper="0.1" />
+				<interval upper="0.2" />
+				<interval upper="0.3" />
+				<interval upper="0.4" />
+				<interval upper="0.5" />
+				<interval upper="0.6" />
+				<interval upper="0.7" />
+				<interval upper="0.7999999999999999" />
+				<interval upper="0.8999999999999999" />
+				<interval upper="1" />
+			</discretization>
+		</equation>
+		<equation id="rigidity">
+			<definition lower="0" upper="1">rigidity=Normal(0.19108,0.0267986)</definition>
+			<discretization>
+				<interval upper="0.1" />
+				<interval upper="0.2" />
+				<interval upper="0.3" />
+				<interval upper="0.4" />
+				<interval upper="0.5" />
+				<interval upper="0.6" />
+				<interval upper="0.7" />
+				<interval upper="0.7999999999999999" />
+				<interval upper="0.8999999999999999" />
+				<interval upper="1" />
+			</discretization>
+		</equation>
+		<equation id="tremor">
+			<definition lower="0" upper="0.5681818181818182">tremor=Normal(0.130725,0.013431)</definition>
+			<discretization>
+				<interval upper="0.05681818181818182" />
+				<interval upper="0.1136363636363636" />
+				<interval upper="0.1704545454545455" />
+				<interval upper="0.2272727272727273" />
+				<interval upper="0.2840909090909091" />
+				<interval upper="0.3409090909090909" />
+				<interval upper="0.3977272727272728" />
+				<interval upper="0.4545454545454546" />
+				<interval upper="0.5113636363636365" />
+				<interval upper="0.5681818181818182" />
+			</discretization>
+		</equation>
+		<equation id="sweating">
+			<parents>LV_120349</parents>
+			<definition lower="0" upper="1">sweating=Choose(LV_120349,Normal(0.316081,0.0755955),Normal(0.000221057,0.000122654))</definition>
+			<discretization>
+				<interval upper="0.1" />
+				<interval upper="0.2" />
+				<interval upper="0.3" />
+				<interval upper="0.4" />
+				<interval upper="0.5" />
+				<interval upper="0.6" />
+				<interval upper="0.7" />
+				<interval upper="0.7999999999999999" />
+				<interval upper="0.8999999999999999" />
+				<interval upper="1" />
+			</discretization>
+		</equation>
+		<equation id="mental_fatigue">
+			<parents>LV_60235</parents>
+			<definition lower="0" upper="1">mental_fatigue=Choose(LV_60235,Normal(0.227529,0.0580809),Normal(0.00535455,0.000464164))</definition>
+			<discretization>
+				<interval upper="0.1" />
+				<interval upper="0.2" />
+				<interval upper="0.3" />
+				<interval upper="0.4" />
+				<interval upper="0.5" />
+				<interval upper="0.6" />
+				<interval upper="0.7" />
+				<interval upper="0.7999999999999999" />
+				<interval upper="0.8999999999999999" />
+				<interval upper="1" />
+			</discretization>
+		</equation>
+		<equation id="physical_tiredness">
+			<parents>LV_60235</parents>
+			<definition lower="0" upper="1">physical_tiredness=Choose(LV_60235,Normal(0.46363,0.0707679),Normal(0.0404923,0.00601036))</definition>
+			<discretization>
+				<interval upper="0.1" />
+				<interval upper="0.2" />
+				<interval upper="0.3" />
+				<interval upper="0.4" />
+				<interval upper="0.5" />
+				<interval upper="0.6" />
+				<interval upper="0.7" />
+				<interval upper="0.7999999999999999" />
+				<interval upper="0.8999999999999999" />
+				<interval upper="1" />
+			</discretization>
+		</equation>
+		<equation id="smell">
+			<definition lower="0" upper="1">smell=Normal(0.389459,0.156692)</definition>
+			<discretization>
+				<interval upper="0.1" />
+				<interval upper="0.2" />
+				<interval upper="0.3" />
+				<interval upper="0.4" />
+				<interval upper="0.5" />
+				<interval upper="0.6" />
+				<interval upper="0.7" />
+				<interval upper="0.7999999999999999" />
+				<interval upper="0.8999999999999999" />
+				<interval upper="1" />
+			</discretization>
+		</equation>
+		<equation id="weight_loss">
+			<parents>LV_120492</parents>
+			<definition lower="0" upper="1">weight_loss=Choose(LV_120492,Normal(0.291716,0.109585),Normal(0.000167814,0.000111966))</definition>
+			<discretization>
+				<interval upper="0.1" />
+				<interval upper="0.2" />
+				<interval upper="0.3" />
+				<interval upper="0.4" />
+				<interval upper="0.5" />
+				<interval upper="0.6" />
+				<interval upper="0.7" />
+				<interval upper="0.7999999999999999" />
+				<interval upper="0.8999999999999999" />
+				<interval upper="1" />
+			</discretization>
+		</equation>
+		<equation id="pain">
+			<definition lower="0" upper="0.828125">pain=Normal(0.125816,0.0217163)</definition>
+			<discretization>
+				<interval upper="0.0828125" />
+				<interval upper="0.165625" />
+				<interval upper="0.2484375" />
+				<interval upper="0.33125" />
+				<interval upper="0.4140625" />
+				<interval upper="0.496875" />
+				<interval upper="0.5796875" />
+				<interval upper="0.6625" />
+				<interval upper="0.7453124999999999" />
+				<interval upper="0.828125" />
+			</discretization>
+		</equation>
+		<equation id="sleep">
+			<parents>LV_120267</parents>
+			<definition lower="0" upper="0.7916666666666666">sleep=Choose(LV_120267,Normal(0.177398,0.0188364),Normal(0.0665796,0.00463844))</definition>
+			<discretization>
+				<interval upper="0.07916666666666666" />
+				<interval upper="0.1583333333333333" />
+				<interval upper="0.2375" />
+				<interval upper="0.3166666666666667" />
+				<interval upper="0.3958333333333333" />
+				<interval upper="0.475" />
+				<interval upper="0.5541666666666667" />
+				<interval upper="0.6333333333333333" />
+				<interval upper="0.7124999999999999" />
+				<interval upper="0.7916666666666666" />
+			</discretization>
+		</equation>
+		<equation id="gastrointestinal">
+			<parents>LV_120267</parents>
+			<definition lower="0" upper="0.734375">gastrointestinal=Choose(LV_120267,Normal(0.151021,0.0228371),Normal(0.0510246,0.00428503))</definition>
+			<discretization>
+				<interval upper="0.0734375" />
+				<interval upper="0.146875" />
+				<interval upper="0.2203125" />
+				<interval upper="0.29375" />
+				<interval upper="0.3671875" />
+				<interval upper="0.440625" />
+				<interval upper="0.5140625" />
+				<interval upper="0.5875" />
+				<interval upper="0.6609375000000001" />
+				<interval upper="0.734375" />
+			</discretization>
+		</equation>
+		<equation id="sexual">
+			<definition lower="0" upper="1">sexual=Normal(0.140083,0.0625199)</definition>
+			<discretization>
+				<interval upper="0.1" />
+				<interval upper="0.2" />
+				<interval upper="0.3" />
+				<interval upper="0.4" />
+				<interval upper="0.5" />
+				<interval upper="0.6" />
+				<interval upper="0.7" />
+				<interval upper="0.7999999999999999" />
+				<interval upper="0.8999999999999999" />
+				<interval upper="1" />
+			</discretization>
+		</equation>
+		<equation id="urinary">
+			<definition lower="0" upper="1">urinary=Normal(0.15625,0.0368713)</definition>
+			<discretization>
+				<interval upper="0.1" />
+				<interval upper="0.2" />
+				<interval upper="0.3" />
+				<interval upper="0.4" />
+				<interval upper="0.5" />
+				<interval upper="0.6" />
+				<interval upper="0.7" />
+				<interval upper="0.7999999999999999" />
+				<interval upper="0.8999999999999999" />
+				<interval upper="1" />
+			</discretization>
+		</equation>
+		<equation id="hypotension">
+			<parents>LV_120492</parents>
+			<definition lower="0" upper="0.75">hypotension=Choose(LV_120492,Normal(0.243683,0.0438197),Normal(0.0296888,0.00302896))</definition>
+			<discretization>
+				<interval upper="0.075" />
+				<interval upper="0.15" />
+				<interval upper="0.225" />
+				<interval upper="0.3" />
+				<interval upper="0.375" />
+				<interval upper="0.45" />
+				<interval upper="0.525" />
+				<interval upper="0.6" />
+				<interval upper="0.6749999999999999" />
+				<interval upper="0.75" />
+			</discretization>
+		</equation>
+		<equation id="cognition">
+			<parents>LV_120267</parents>
+			<definition lower="0" upper="0.6875">cognition=Choose(LV_120267,Normal(0.175449,0.021287),Normal(0.0395508,0.00252322))</definition>
+			<discretization>
+				<interval upper="0.06875000000000001" />
+				<interval upper="0.1375" />
+				<interval upper="0.20625" />
+				<interval upper="0.275" />
+				<interval upper="0.34375" />
+				<interval upper="0.4125" />
+				<interval upper="0.48125" />
+				<interval upper="0.5499999999999999" />
+				<interval upper="0.6187499999999999" />
+				<interval upper="0.6875" />
+			</discretization>
+		</equation>
+		<equation id="impulse_control">
+			<parents>LV_120267</parents>
+			<definition lower="0" upper="0.390625">impulse_control=Choose(LV_120267,Normal(0.0343372,0.00461098),Normal(0.000450082,1.7136e-05))</definition>
+			<discretization>
+				<interval upper="0.0390625" />
+				<interval upper="0.078125" />
+				<interval upper="0.1171875" />
+				<interval upper="0.15625" />
+				<interval upper="0.1953125" />
+				<interval upper="0.234375" />
+				<interval upper="0.2734375" />
+				<interval upper="0.3125" />
+				<interval upper="0.3515625" />
+				<interval upper="0.390625" />
+			</discretization>
+		</equation>
+		<equation id="psychosis">
+			<parents>LV_120465</parents>
+			<definition lower="0" upper="0.5625">psychosis=Choose(LV_120465,Normal(0.0922241,0.00851821),Normal(0.0013254,3.3086e-05))</definition>
+			<discretization>
+				<interval upper="0.05625" />
+				<interval upper="0.1125" />
+				<interval upper="0.16875" />
+				<interval upper="0.225" />
+				<interval upper="0.28125" />
+				<interval upper="0.3375" />
+				<interval upper="0.39375" />
+				<interval upper="0.4500000000000001" />
+				<interval upper="0.5062500000000001" />
+				<interval upper="0.5625" />
+			</discretization>
+		</equation>
+		<equation id="apathy">
+			<parents>LV_120267</parents>
+			<definition lower="0" upper="0.75">apathy=Choose(LV_120267,Normal(0.170927,0.0346987),Normal(0.0137737,0.000871086))</definition>
+			<discretization>
+				<interval upper="0.075" />
+				<interval upper="0.15" />
+				<interval upper="0.225" />
+				<interval upper="0.3" />
+				<interval upper="0.375" />
+				<interval upper="0.45" />
+				<interval upper="0.525" />
+				<interval upper="0.6" />
+				<interval upper="0.6749999999999999" />
+				<interval upper="0.75" />
+			</discretization>
+		</equation>
+		<equation id="anxiety">
+			<parents>LV_120267</parents>
+			<definition lower="0" upper="0.84375">anxiety=Choose(LV_120267,Normal(0.177409,0.0245012),Normal(0.0260095,0.00162174))</definition>
+			<discretization>
+				<interval upper="0.08437500000000001" />
+				<interval upper="0.16875" />
+				<interval upper="0.253125" />
+				<interval upper="0.3375" />
+				<interval upper="0.421875" />
+				<interval upper="0.50625" />
+				<interval upper="0.590625" />
+				<interval upper="0.6749999999999999" />
+				<interval upper="0.7593749999999999" />
+				<interval upper="0.84375" />
+			</discretization>
+		</equation>
+		<equation id="depression">
+			<parents>LV_120267</parents>
+			<definition lower="0" upper="0.9">depression=Choose(LV_120267,Normal(0.149537,0.0281278),Normal(0.0101358,0.000463862))</definition>
+			<discretization>
+				<interval upper="0.09" />
+				<interval upper="0.18" />
+				<interval upper="0.27" />
+				<interval upper="0.36" />
+				<interval upper="0.45" />
+				<interval upper="0.5399999999999999" />
+				<interval upper="0.6299999999999999" />
+				<interval upper="0.7199999999999999" />
+				<interval upper="0.8099999999999998" />
+				<interval upper="0.9" />
+			</discretization>
+		</equation>
+	</nodes>
+	<extensions>
+		<genie version="1.0" app="GeNIe 2.3.3705.0 ACADEMIC" name="DAG" faultnameformat="nodestate">
+			<node id="depression">
+				<name>depression</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>2006 2027 2006 2027</position>
+				<barchart active="true" width="160" height="220" />
+			</node>
+			<node id="anxiety">
+				<name>anxiety</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>2199 2027 2199 2027</position>
+				<barchart active="true" width="160" height="220" />
+			</node>
+			<node id="apathy">
+				<name>apathy</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>2392 2027 2392 2027</position>
+				<barchart active="true" width="160" height="220" />
+			</node>
+			<node id="psychosis">
+				<name>psychosis</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>798 1697 798 1697</position>
+				<barchart active="true" width="160" height="220" />
+			</node>
+			<node id="impulse_control">
+				<name>impulse_control</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>2585 2027 2585 2027</position>
+				<barchart active="true" width="160" height="220" />
+			</node>
+			<node id="cognition">
+				<name>cognition</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>2778 2027 2778 2027</position>
+				<barchart active="true" width="160" height="220" />
+			</node>
+			<node id="hypotension">
+				<name>hypotension</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>1196 1704 1196 1704</position>
+				<barchart active="true" width="160" height="220" />
+			</node>
+			<node id="urinary">
+				<name>urinary</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>605 816 605 816</position>
+				<barchart active="true" width="160" height="220" />
+			</node>
+			<node id="sexual">
+				<name>sexual</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>798 816 798 816</position>
+				<barchart active="true" width="160" height="220" />
+			</node>
+			<node id="gastrointestinal">
+				<name>gastrointestinal</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>2971 2027 2971 2027</position>
+				<barchart active="true" width="160" height="220" />
+			</node>
+			<node id="sleep">
+				<name>sleep</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>3164 2027 3164 2027</position>
+				<barchart active="true" width="160" height="220" />
+			</node>
+			<node id="pain">
+				<name>pain</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>991 816 991 816</position>
+				<barchart active="true" width="160" height="220" />
+			</node>
+			<node id="weight_loss">
+				<name>weight_loss</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>1452 1697 1452 1697</position>
+				<barchart active="true" width="160" height="220" />
+			</node>
+			<node id="smell">
+				<name>smell</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>1184 816 1184 816</position>
+				<barchart active="true" width="160" height="220" />
+			</node>
+			<node id="physical_tiredness">
+				<name>physical_tiredness</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>4125 2270 4125 2270</position>
+				<barchart active="true" width="160" height="220" />
+			</node>
+			<node id="mental_fatigue">
+				<name>mental_fatigue</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>4338 2255 4338 2255</position>
+				<barchart active="true" width="160" height="220" />
+			</node>
+			<node id="sweating">
+				<name>sweating</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>2547 1193 2547 1193</position>
+				<barchart active="true" width="160" height="220" />
+			</node>
+			<node id="tremor">
+				<name>tremor</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>1377 816 1377 816</position>
+				<barchart active="true" width="160" height="220" />
+			</node>
+			<node id="rigidity">
+				<name>rigidity</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>1570 816 1570 816</position>
+				<barchart active="true" width="160" height="220" />
+			</node>
+			<node id="dyskinesias">
+				<name>dyskinesias</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>3492 2268 3492 2268</position>
+				<barchart active="true" width="160" height="220" />
+			</node>
+			<node id="fluctuations">
+				<name>fluctuations</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>1763 816 1763 816</position>
+				<barchart active="true" width="160" height="220" />
+			</node>
+			<node id="bradykinesia">
+				<name>bradykinesia</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>429 1974 429 1974</position>
+				<barchart active="true" width="160" height="220" />
+			</node>
+			<node id="axial_no_pigd">
+				<name>axial_no_pigd</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>430 1617 430 1617</position>
+				<barchart active="true" width="160" height="220" />
+			</node>
+			<node id="pigd">
+				<name>pigd</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>3723 2264 3723 2264</position>
+				<barchart active="true" width="160" height="220" />
+			</node>
+			<node id="LV_120267">
+				<name>LV_120267</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>3223 1214 3223 1214</position>
+				<barchart active="true" width="160" height="110" />
+			</node>
+			<node id="LV_120349">
+				<name>LV_120349</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>2929 865 2929 865</position>
+				<barchart active="true" width="160" height="110" />
+			</node>
+			<node id="LV_60109">
+				<name>LV_60109</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>3593 1978 3593 1978</position>
+				<barchart active="true" width="160" height="110" />
+			</node>
+			<node id="LV_120465">
+				<name>LV_120465</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>586 1312 586 1312</position>
+				<barchart active="true" width="160" height="110" />
+			</node>
+			<node id="LV_120492">
+				<name>LV_120492</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>1316 1361 1316 1361</position>
+				<barchart active="true" width="160" height="110" />
+			</node>
+			<node id="LV_60235">
+				<name>LV_60235</name>
+				<interior color="e5f6f7" />
+				<outline color="000080" />
+				<font color="000080" name="Arial" size="10" bold="true" />
+				<position>4164 1970 4164 1970</position>
+				<barchart active="true" width="160" height="110" />
+			</node>
+		</genie>
+	</extensions>
+</smile>

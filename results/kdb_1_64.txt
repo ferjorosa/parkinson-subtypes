@@ -1,0 +1,38 @@
+"C:\Program Files\Java\jdk1.8.0_101\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2020.1.2\lib\idea_rt.jar=52869:C:\Program Files\JetBrains\IntelliJ IDEA 2020.1.2\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_101\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\rt.jar;D:\parkinson-subtypes-new\target\scala-2.13\classes;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\errorprone\error_prone_annotations\2.2.0\error_prone_annotations-2.2.0.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\guava\guava\27.1-jre\guava-27.1-jre.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\commons-cli\commons-cli\1.2\commons-cli-1.2.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\commons\commons-lang3\3.6\commons-lang3-3.6.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\checkerframework\checker-qual\2.5.2\checker-qual-2.5.2.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\codehaus\mojo\animal-sniffer-annotations\1.17\animal-sniffer-annotations-1.17.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.4\scala-library-2.13.4.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\slf4j\slf4j-api\1.7.26\slf4j-api-1.7.26.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\slf4j\slf4j-simple\1.7.26\slf4j-simple-1.7.26.jar" scripts.Learn_KDB
+==================================
+========== KDB =========
+==================================
+n VBEM candidates: 64
+n VBSEM candidates: 1
+
+VBSEM - Base score: 7140.589240778898
+HC - initial score: 7161.7249534630555
+Best operation = ADD_ARC(fluctuations , smell) -> 7161.38151230945
+VBSEM - Failed to improve model: 7140.589240778898
+
+(2): 7140.589240778898 -> SCORE IMPROVEMENT
+
+
+VBSEM - Base score: 7157.90607624652
+HC - initial score: 7177.6766999869815
+Best operation = ADD_ARC(fluctuations , smell) -> 7173.507699818878
+VBSEM - Failed to improve model: 7157.90607624652
+
+(3): 7157.90607624652 -> SCORE IMPROVEMENT
+
+
+VBSEM - Base score: 4282.252697223212
+HC - initial score: 4285.430623792122
+Best operation = ADD_ARC(axial_no_pigd , pigd) -> 4341.039846246221
+Best operation = REVERSE_ARC(axial_no_pigd , pigd) -> 12636.395190694528
+Best operation = REVERSE_ARC(pigd , axial_no_pigd) -> 12636.395190694528
+VBSEM - Model updated: 6963.567902729655
+HC - initial score: 7200.855731561057
+Best operation = REVERSE_ARC(pigd , axial_no_pigd) -> 21342.873269735785
+Best operation = REVERSE_ARC(axial_no_pigd , pigd) -> 21342.873269735785
+VBSEM - Failed to improve model: 4304.337074834118
+
+(4): 6963.567902729655 -> STOP
+
+
+Process finished with exit code 0

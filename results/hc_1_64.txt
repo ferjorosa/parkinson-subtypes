@@ -1,0 +1,32 @@
+"C:\Program Files\Java\jdk1.8.0_101\bin\java.exe" "-javaagent:C:\Program Files\JetBrains\IntelliJ IDEA 2020.1.2\lib\idea_rt.jar=53160:C:\Program Files\JetBrains\IntelliJ IDEA 2020.1.2\bin" -Dfile.encoding=UTF-8 -classpath "C:\Program Files\Java\jdk1.8.0_101\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\deploy.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\access-bridge-64.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\cldrdata.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\dnsns.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\jaccess.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\jfxrt.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\localedata.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\nashorn.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\sunec.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\sunjce_provider.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\sunmscapi.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\sunpkcs11.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\ext\zipfs.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\javaws.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jfxswt.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\management-agent.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\plugin.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_101\jre\lib\rt.jar;D:\parkinson-subtypes-new\target\scala-2.13\classes;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\code\gson\gson\2.8.6\gson-2.8.6.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\errorprone\error_prone_annotations\2.2.0\error_prone_annotations-2.2.0.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\guava\guava\27.1-jre\guava-27.1-jre.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\com\google\j2objc\j2objc-annotations\1.1\j2objc-annotations-1.1.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\commons-cli\commons-cli\1.2\commons-cli-1.2.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\commons\commons-lang3\3.6\commons-lang3-3.6.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\apache\commons\commons-math3\3.6.1\commons-math3-3.6.1.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\checkerframework\checker-qual\2.5.2\checker-qual-2.5.2.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\codehaus\mojo\animal-sniffer-annotations\1.17\animal-sniffer-annotations-1.17.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\scala-lang\scala-library\2.13.4\scala-library-2.13.4.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\slf4j\slf4j-api\1.7.26\slf4j-api-1.7.26.jar;C:\Users\equipo\AppData\Local\Coursier\cache\v1\https\repo1.maven.org\maven2\org\slf4j\slf4j-simple\1.7.26\slf4j-simple-1.7.26.jar" scripts.Learn_HC
+==================================
+========== HC ==========
+==================================
+n VBEM candidates: 1
+n VBSEM candidates: 64
+
+VBSEM - initial score: 2939.6619883405706
+VBSEM - iteration 1
+HC - initial score: 4351.842481791374
+Best operation = ADD_ARC(axial_no_pigd , pigd) -> 4404.729081362981
+Best operation = REVERSE_ARC(axial_no_pigd , pigd) -> 12860.815426592133
+Best operation = REVERSE_ARC(pigd , axial_no_pigd) -> 12860.815426592133
+VBSEM - Model updated: 4338.031311403426
+VBSEM - iteration 2
+HC - initial score: 4390.003482325007
+Best operation = REVERSE_ARC(pigd , axial_no_pigd) -> 12867.57364971201
+Best operation = REVERSE_ARC(axial_no_pigd , pigd) -> 12867.57364971201
+VBSEM - Model updated: 4357.0210663870785
+VBSEM - iteration 3
+HC - initial score: 4408.535602886507
+Best operation = REVERSE_ARC(axial_no_pigd , pigd) -> 12867.509082655051
+Best operation = REVERSE_ARC(pigd , axial_no_pigd) -> 12867.50908265505
+VBSEM - Failed to improve model: 4338.031445805187
+---------------------
+Learning time (seconds): 9.1
+ELBO: 4357.0210663870785
+LogLikelihood: 4542.920839306231
+BIC: 4396.007763135065
+AIC: 4493.920839306231
+
+Process finished with exit code 0

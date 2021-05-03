@@ -1,0 +1,23 @@
+==================================
+========== IL ==========
+==================================
+n VBEM candidates: 64
+Initial score: 4301.643216814844
+
+Iteration[1] = AddDiscreteNode(weight_loss, sweating) -> 4494.475652340784
+
+Iteration[2] = AddDiscreteNode(physical_tiredness, mental_fatigue) -> 4572.294394530332
+
+Iteration[3] = AddDiscreteNode(depression, apathy) -> 4583.345989874104
+
+Iteration[4] = AddDiscreteNode(LV_291, LV_851) -> 4575.324364002135
+
+Final score after global VBEM: 4583.345990259445
+---------------------
+Learning time (seconds): 192.802
+ELBO: 4583.345990259445
+LogLikelihood: 5496.33442614241
+BIC: 5298.451507217982
+AIC: 5430.33442614241
+
+Process finished with exit code 0

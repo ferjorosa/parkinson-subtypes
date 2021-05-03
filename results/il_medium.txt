@@ -1,0 +1,31 @@
+==================================
+========== IL ==========
+==================================
+n VBEM candidates: 64
+Initial score: 4301.643216814844
+
+Iteration[1] = AddDiscreteNode(weight_loss, sweating) -> 4494.475652340784
+
+Iteration[2] = AddDiscreteNode(physical_tiredness, mental_fatigue) -> 4572.294394530332
+
+Iteration[3] = AddArc(depression, apathy) -> 4622.958327368138
+
+Iteration[4] = AddArc(depression, anxiety) -> 4664.161498021259
+
+Iteration[5] = AddArc(pigd, axial_no_pigd) -> 4700.651881294273
+
+Iteration[6] = AddArc(fluctuations, smell) -> 4712.871205817349
+
+Iteration[7] = AddArc(sleep, urinary) -> 4722.631969306107
+
+Iteration[8] = AddArc(dyskinesias, fluctuations) -> 4730.971122443715
+
+Iteration[9] = AddDiscreteNode(LV_291, LV_851) -> 4722.949496190915
+
+Final score after global VBEM: 4730.9711224468765
+---------------------
+Learning time (seconds): 558.569
+ELBO: 4730.9711224468765
+LogLikelihood: 5639.04768936349
+BIC: 5441.164770439062
+AIC: 5573.04768936349

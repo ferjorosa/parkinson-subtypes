@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<smile discsamples="10000" id="DAG" numsamples="10000" version="1.0">
+  <nodes>
+    <cpt id="LatentVar">
+      <state id="0"/>
+      <state id="1"/>
+      <state id="2"/>
+      <probabilities>0.5476978994291041 0.004901960784350767 0.4474001397865452 </probabilities>
+    </cpt>
+    <equation id="pigd">
+      <parents>LatentVar </parents>
+      <definition lower="0.0" upper="0.85">pigd=Choose(LatentVar,Normal(0.2623885046983638,0.04259108153020464),Normal(0.21552162849741816,0.03505169991370847),Normal(0.15927372534042925,0.020200522680656332))</definition>
+      <discretization>
+        <interval upper="0.08499999999999999"/>
+        <interval upper="0.16999999999999998"/>
+        <interval upper="0.255"/>
+        <interval upper="0.33999999999999997"/>
+        <interval upper="0.42499999999999993"/>
+        <interval upper="0.5099999999999999"/>
+        <interval upper="0.5949999999999999"/>
+        <interval upper="0.6799999999999998"/>
+        <interval upper="0.7649999999999998"/>
+        <interval upper="0.8499999999999998"/>
+      </discretization>
+    </equation>
+    <equation id="axial_no_pigd">
+      <parents>LatentVar </parents>
+      <definition lower="0.0" upper="0.8571428571428571">axial_no_pigd=Choose(LatentVar,Normal(0.2763478865458457,0.024850338253680607),Normal(0.22512437810840982,0.023038427519163376),Normal(0.16235437491354154,0.013662713690419775))</definition>
+      <discretization>
+        <interval upper="0.08571428571428572"/>
+        <interval upper="0.17142857142857143"/>
+        <interval upper="0.2571428571428571"/>
+        <interval upper="0.34285714285714286"/>
+        <interval upper="0.4285714285714286"/>
+        <interval upper="0.5142857142857143"/>
+        <interval upper="0.6000000000000001"/>
+        <interval upper="0.6857142857142858"/>
+        <interval upper="0.7714285714285716"/>
+        <interval upper="0.8571428571428573"/>
+      </discretization>
+    </equation>
+    <equation id="bradykinesia">
+      <parents>LatentVar </parents>
+      <definition lower="0.0" upper="0.8863636363636364">bradykinesia=Choose(LatentVar,Normal(0.3177772038302419,0.02968283589150148),Normal(0.28512921088952864,0.029365688930114573),Normal(0.24577012523448752,0.026149674509920832))</definition>
+      <discretization>
+        <interval upper="0.08863636363636364"/>
+        <interval upper="0.17727272727272728"/>
+        <interval upper="0.26590909090909093"/>
+        <interval upper="0.35454545454545455"/>
+        <interval upper="0.4431818181818182"/>
+        <interval upper="0.5318181818181819"/>
+        <interval upper="0.6204545454545455"/>
+        <interval upper="0.7090909090909091"/>
+        <interval upper="0.7977272727272727"/>
+        <interval upper="0.8863636363636364"/>
+      </discretization>
+    </equation>
+    <equation id="fluctuations">
+      <parents>LatentVar </parents>
+      <definition lower="0.0" upper="0.8125">fluctuations=Choose(LatentVar,Normal(0.21804357919671127,0.04191150302925688),Normal(0.16271820448802762,0.036178646276866254),Normal(0.09522566269371487,0.020895475483047543))</definition>
+      <discretization>
+        <interval upper="0.08125"/>
+        <interval upper="0.1625"/>
+        <interval upper="0.24375000000000002"/>
+        <interval upper="0.325"/>
+        <interval upper="0.40625"/>
+        <interval upper="0.4875"/>
+        <interval upper="0.56875"/>
+        <interval upper="0.65"/>
+        <interval upper="0.7312500000000001"/>
+        <interval upper="0.8125000000000001"/>
+      </discretization>
+    </equation>
+    <equation id="dyskinesias">
+      <parents>LatentVar </parents>
+      <definition lower="0.0" upper="1.0">dyskinesias=Choose(LatentVar,Normal(0.11197596274630638,0.036009257142249874),Normal(0.06902985074599434,0.023297690651014277),Normal(0.016403084837761393,0.00269106792892317))</definition>
+      <discretization>
+        <interval upper="0.1"/>
+        <interval upper="0.2"/>
+        <interval upper="0.30000000000000004"/>
+        <interval upper="0.4"/>
+        <interval upper="0.5"/>
+        <interval upper="0.6"/>
+        <interval upper="0.7"/>
+        <interval upper="0.7999999999999999"/>
+        <interval upper="0.8999999999999999"/>
+        <interval upper="0.9999999999999999"/>
+      </discretization>
+    </equation>
+    <equation id="rigidity">
+      <parents>LatentVar </parents>
+      <definition lower="0.0" upper="1.0">rigidity=Choose(LatentVar,Normal(0.2103642293482413,0.032174811222272545),Normal(0.1910804020095188,0.026798581475030007),Normal(0.16763062589746963,0.01925817527163045))</definition>
+      <discretization>
+        <interval upper="0.1"/>
+        <interval upper="0.2"/>
+        <interval upper="0.30000000000000004"/>
+        <interval upper="0.4"/>
+        <interval upper="0.5"/>
+        <interval upper="0.6"/>
+        <interval upper="0.7"/>
+        <interval upper="0.7999999999999999"/>
+        <interval upper="0.8999999999999999"/>
+        <interval upper="0.9999999999999999"/>
+      </discretization>
+    </equation>
+    <equation id="tremor">
+      <parents>LatentVar </parents>
+      <definition lower="0.0" upper="0.5681818181818182">tremor=Choose(LatentVar,Normal(0.13356256785099233,0.015449488514926658),Normal(0.13072541269449622,0.013430988646033147),Normal(0.12728271785110676,0.010959533538287812))</definition>
+      <discretization>
+        <interval upper="0.05681818181818182"/>
+        <interval upper="0.11363636363636365"/>
+        <interval upper="0.17045454545454547"/>
+        <interval upper="0.2272727272727273"/>
+        <interval upper="0.2840909090909091"/>
+        <interval upper="0.34090909090909094"/>
+        <interval upper="0.39772727272727276"/>
+        <interval upper="0.4545454545454546"/>
+        <interval upper="0.5113636363636365"/>
+        <interval upper="0.5681818181818183"/>
+      </discretization>
+    </equation>
+    <equation id="sweating">
+      <parents>LatentVar </parents>
+      <definition lower="0.0" upper="1.0">sweating=Choose(LatentVar,Normal(0.12393038365990738,0.05456055542091236),Normal(0.06965174129396103,0.03382245334256369),Normal(0.0031379342777895078,3.75327529705389E-4))</definition>
+      <discretization>
+        <interval upper="0.1"/>
+        <interval upper="0.2"/>
+        <interval upper="0.30000000000000004"/>
+        <interval upper="0.4"/>
+        <interval upper="0.5"/>
+        <interval upper="0.6"/>
+        <interval upper="0.7"/>
+        <interval upper="0.7999999999999999"/>
+        <interval upper="0.8999999999999999"/>
+        <interval upper="0.9999999999999999"/>
+      </discretization>
+    </equation>
+    <equation id="mental_fatigue">
+      <parents>LatentVar </parents>
+      <definition lower="0.0" upper="1.0">mental_fatigue=Choose(LatentVar,Normal(0.1661855579267377,0.052230225058503034),Normal(0.09421641791005783,0.03535523176992729),Normal(0.006024427812006194,5.514503295180546E-4))</definition>
+      <discretization>
+        <interval upper="0.1"/>
+        <interval upper="0.2"/>
+        <interval upper="0.30000000000000004"/>
+        <interval upper="0.4"/>
+        <interval upper="0.5"/>
+        <interval upper="0.6"/>
+        <interval upper="0.7"/>
+        <interval upper="0.7999999999999999"/>
+        <interval upper="0.8999999999999999"/>
+        <interval upper="0.9999999999999999"/>
+      </discretization>
+    </equation>
+    <equation id="physical_tiredness">
+      <parents>LatentVar </parents>
+      <definition lower="0.0" upper="1.0">physical_tiredness=Choose(LatentVar,Normal(0.313663327004005,0.08760381676758065),Normal(0.2097325870641182,0.07488078980833433),Normal(0.0823744056889051,0.029833278350818646))</definition>
+      <discretization>
+        <interval upper="0.1"/>
+        <interval upper="0.2"/>
+        <interval upper="0.30000000000000004"/>
+        <interval upper="0.4"/>
+        <interval upper="0.5"/>
+        <interval upper="0.6"/>
+        <interval upper="0.7"/>
+        <interval upper="0.7999999999999999"/>
+        <interval upper="0.8999999999999999"/>
+        <interval upper="0.9999999999999999"/>
+      </discretization>
+    </equation>
+    <equation id="smell">
+      <parents>LatentVar </parents>
+      <definition lower="0.0" upper="1.0">smell=Choose(LatentVar,Normal(0.452036337079685,0.16092671990817092),Normal(0.3894589552227212,0.1566919802803004),Normal(0.31277575684518644,0.14082372445076666))</definition>
+      <discretization>
+        <interval upper="0.1"/>
+        <interval upper="0.2"/>
+        <interval upper="0.30000000000000004"/>
+        <interval upper="0.4"/>
+        <interval upper="0.5"/>
+        <interval upper="0.6"/>
+        <interval upper="0.7"/>
+        <interval upper="0.7999999999999999"/>
+        <interval upper="0.8999999999999999"/>
+        <interval upper="0.9999999999999999"/>
+      </discretization>
+    </equation>
+    <equation id="weight_loss">
+      <parents>LatentVar </parents>
+      <definition lower="0.0" upper="1.0">weight_loss=Choose(LatentVar,Normal(0.09970315219487777,0.05659846140297079),Normal(0.055037313433031414,0.03370130457770967),Normal(3.031703133105714E-4,2.0223573329678543E-4))</definition>
+      <discretization>
+        <interval upper="0.1"/>
+        <interval upper="0.2"/>
+        <interval upper="0.30000000000000004"/>
+        <interval upper="0.4"/>
+        <interval upper="0.5"/>
+        <interval upper="0.6"/>
+        <interval upper="0.7"/>
+        <interval upper="0.7999999999999999"/>
+        <interval upper="0.8999999999999999"/>
+        <interval upper="0.9999999999999999"/>
+      </discretization>
+    </equation>
+    <equation id="pain">
+      <parents>LatentVar </parents>
+      <definition lower="0.0" upper="0.828125">pain=Choose(LatentVar,Normal(0.16761074764355852,0.028267634587400725),Normal(0.12581623134242015,0.021716310406504867),Normal(0.07460064690127896,0.008924659518238467))</definition>
+      <discretization>
+        <interval upper="0.0828125"/>
+        <interval upper="0.165625"/>
+        <interval upper="0.24843749999999998"/>
+        <interval upper="0.33125"/>
+        <interval upper="0.4140625"/>
+        <interval upper="0.496875"/>
+        <interval upper="0.5796875"/>
+        <interval upper="0.6625"/>
+        <interval upper="0.7453124999999999"/>
+        <interval upper="0.8281249999999999"/>
+      </discretization>
+    </equation>
+    <equation id="sleep">
+      <parents>LatentVar </parents>
+      <definition lower="0.0" upper="0.7916666666666666">sleep=Choose(LatentVar,Normal(0.15976297698384379,0.01758504202481434),Normal(0.11544056525324294,0.013925766175071384),Normal(0.06137101583169432,0.004141716366243613))</definition>
+      <discretization>
+        <interval upper="0.07916666666666666"/>
+        <interval upper="0.15833333333333333"/>
+        <interval upper="0.2375"/>
+        <interval upper="0.31666666666666665"/>
+        <interval upper="0.3958333333333333"/>
+        <interval upper="0.475"/>
+        <interval upper="0.5541666666666667"/>
+        <interval upper="0.6333333333333333"/>
+        <interval upper="0.7124999999999999"/>
+        <interval upper="0.7916666666666665"/>
+      </discretization>
+    </equation>
+    <equation id="gastrointestinal">
+      <parents>LatentVar </parents>
+      <definition lower="0.0" upper="0.734375">gastrointestinal=Choose(LatentVar,Normal(0.13178140711974304,0.019259511683971862),Normal(0.09511377805412892,0.014929683321552733),Normal(0.05038269344055191,0.0060065738083183405))</definition>
+      <discretization>
+        <interval upper="0.0734375"/>
+        <interval upper="0.146875"/>
+        <interval upper="0.22031250000000002"/>
+        <interval upper="0.29375"/>
+        <interval upper="0.3671875"/>
+        <interval upper="0.440625"/>
+        <interval upper="0.5140625"/>
+        <interval upper="0.5875"/>
+        <interval upper="0.6609375000000001"/>
+        <interval upper="0.7343750000000001"/>
+      </discretization>
+    </equation>
+    <equation id="sexual">
+      <parents>LatentVar </parents>
+      <definition lower="0.0" upper="1.0">sexual=Choose(LatentVar,Normal(0.22513829378267025,0.09188799731708036),Normal(0.14008333333235143,0.06251988888842079),Normal(0.03820107592234106,0.00829646130470318))</definition>
+      <discretization>
+        <interval upper="0.1"/>
+        <interval upper="0.2"/>
+        <interval upper="0.30000000000000004"/>
+        <interval upper="0.4"/>
+        <interval upper="0.5"/>
+        <interval upper="0.6"/>
+        <interval upper="0.7"/>
+        <interval upper="0.7999999999999999"/>
+        <interval upper="0.8999999999999999"/>
+        <interval upper="0.9999999999999999"/>
+      </discretization>
+    </equation>
+    <equation id="urinary">
+      <parents>LatentVar </parents>
+      <definition lower="0.0" upper="1.0">urinary=Choose(LatentVar,Normal(0.2099729225377819,0.04762776200428123),Normal(0.15624999999875164,0.036871307524607884),Normal(0.09041717982959623,0.015819506151335212))</definition>
+      <discretization>
+        <interval upper="0.1"/>
+        <interval upper="0.2"/>
+        <interval upper="0.30000000000000004"/>
+        <interval upper="0.4"/>
+        <interval upper="0.5"/>
+        <interval upper="0.6"/>
+        <interval upper="0.7"/>
+        <interval upper="0.7999999999999999"/>
+        <interval upper="0.8999999999999999"/>
+        <interval upper="0.9999999999999999"/>
+      </discretization>
+    </equation>
+    <equation id="hypotension">
+      <parents>LatentVar </parents>
+      <definition lower="0.0" upper="0.75">hypotension=Choose(LatentVar,Normal(0.10699571748240036,0.026631384781707935),Normal(0.06996268656682325,0.017702198545352845),Normal(0.024581892867913565,0.003020244154443579))</definition>
+      <discretization>
+        <interval upper="0.075"/>
+        <interval upper="0.15"/>
+        <interval upper="0.22499999999999998"/>
+        <interval upper="0.3"/>
+        <interval upper="0.375"/>
+        <interval upper="0.45"/>
+        <interval upper="0.525"/>
+        <interval upper="0.6"/>
+        <interval upper="0.6749999999999999"/>
+        <interval upper="0.7499999999999999"/>
+      </discretization>
+    </equation>
+    <equation id="cognition">
+      <parents>LatentVar </parents>
+      <definition lower="0.0" upper="0.6875">cognition=Choose(LatentVar,Normal(0.15192063083528398,0.01998673489720522),Normal(0.09965796019824766,0.015377940637152818),Normal(0.03561455311884015,0.00228162225237235))</definition>
+      <discretization>
+        <interval upper="0.06875"/>
+        <interval upper="0.1375"/>
+        <interval upper="0.20625000000000002"/>
+        <interval upper="0.275"/>
+        <interval upper="0.34375"/>
+        <interval upper="0.4125"/>
+        <interval upper="0.48124999999999996"/>
+        <interval upper="0.5499999999999999"/>
+        <interval upper="0.6187499999999999"/>
+        <interval upper="0.6874999999999999"/>
+      </discretization>
+    </equation>
+    <equation id="impulse_control">
+      <parents>LatentVar </parents>
+      <definition lower="0.0" upper="0.390625">impulse_control=Choose(LatentVar,Normal(0.02730330857075451,0.003891794205109772),Normal(0.015391209476258196,0.0023256739891019847),Normal(8.594325470645345E-4,3.0860804569471125E-5))</definition>
+      <discretization>
+        <interval upper="0.0390625"/>
+        <interval upper="0.078125"/>
+        <interval upper="0.1171875"/>
+        <interval upper="0.15625"/>
+        <interval upper="0.1953125"/>
+        <interval upper="0.234375"/>
+        <interval upper="0.2734375"/>
+        <interval upper="0.3125"/>
+        <interval upper="0.3515625"/>
+        <interval upper="0.390625"/>
+      </discretization>
+    </equation>
+    <equation id="psychosis">
+      <parents>LatentVar </parents>
+      <definition lower="0.0" upper="0.5625">psychosis=Choose(LatentVar,Normal(0.043387326709923874,0.0063053723281233515),Normal(0.02565298507441971,0.003923508622888838),Normal(0.0039210749594241956,1.470625113269883E-4))</definition>
+      <discretization>
+        <interval upper="0.05625"/>
+        <interval upper="0.1125"/>
+        <interval upper="0.16875"/>
+        <interval upper="0.225"/>
+        <interval upper="0.28125"/>
+        <interval upper="0.3375"/>
+        <interval upper="0.39375000000000004"/>
+        <interval upper="0.45000000000000007"/>
+        <interval upper="0.5062500000000001"/>
+        <interval upper="0.5625000000000001"/>
+      </discretization>
+    </equation>
+    <equation id="apathy">
+      <parents>LatentVar </parents>
+      <definition lower="0.0" upper="0.75">apathy=Choose(LatentVar,Normal(0.1383865548051043,0.0318728382113015),Normal(0.08328150912079664,0.02192487811839928),Normal(0.015755015929100214,0.0014536310018969537))</definition>
+      <discretization>
+        <interval upper="0.075"/>
+        <interval upper="0.15"/>
+        <interval upper="0.22499999999999998"/>
+        <interval upper="0.3"/>
+        <interval upper="0.375"/>
+        <interval upper="0.45"/>
+        <interval upper="0.525"/>
+        <interval upper="0.6"/>
+        <interval upper="0.6749999999999999"/>
+        <interval upper="0.7499999999999999"/>
+      </discretization>
+    </equation>
+    <equation id="anxiety">
+      <parents>LatentVar </parents>
+      <definition lower="0.0" upper="0.84375">anxiety=Choose(LatentVar,Normal(0.14452426371874796,0.02347786433499762),Normal(0.09297263681532988,0.017395326210085344),Normal(0.029800552665081127,0.0026943630468553984))</definition>
+      <discretization>
+        <interval upper="0.084375"/>
+        <interval upper="0.16875"/>
+        <interval upper="0.25312500000000004"/>
+        <interval upper="0.3375"/>
+        <interval upper="0.421875"/>
+        <interval upper="0.50625"/>
+        <interval upper="0.590625"/>
+        <interval upper="0.6749999999999999"/>
+        <interval upper="0.7593749999999999"/>
+        <interval upper="0.8437499999999999"/>
+      </discretization>
+    </equation>
+    <equation id="depression">
+      <parents>LatentVar </parents>
+      <definition lower="0.0" upper="0.9">depression=Choose(LatentVar,Normal(0.12136887667506326,0.025817495681483345),Normal(0.07194513715651618,0.017525736391371845),Normal(0.011045140460702228,5.899031449055866E-4))</definition>
+      <discretization>
+        <interval upper="0.09"/>
+        <interval upper="0.18"/>
+        <interval upper="0.27"/>
+        <interval upper="0.36"/>
+        <interval upper="0.44999999999999996"/>
+        <interval upper="0.5399999999999999"/>
+        <interval upper="0.6299999999999999"/>
+        <interval upper="0.7199999999999999"/>
+        <interval upper="0.8099999999999998"/>
+        <interval upper="0.8999999999999998"/>
+      </discretization>
+    </equation>
+  </nodes>
+  <extensions>
+    <genie app="GeNIe 2.3.3705.0 ACADEMIC" faultnameformat="nodestate" name="DAG" version="1.0">
+      <node id="depression">
+        <name>depression</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+      <node id="anxiety">
+        <name>anxiety</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+      <node id="apathy">
+        <name>apathy</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+      <node id="psychosis">
+        <name>psychosis</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+      <node id="impulse_control">
+        <name>impulse_control</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+      <node id="cognition">
+        <name>cognition</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+      <node id="hypotension">
+        <name>hypotension</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+      <node id="urinary">
+        <name>urinary</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+      <node id="sexual">
+        <name>sexual</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+      <node id="gastrointestinal">
+        <name>gastrointestinal</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+      <node id="sleep">
+        <name>sleep</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+      <node id="pain">
+        <name>pain</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+      <node id="weight_loss">
+        <name>weight_loss</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+      <node id="smell">
+        <name>smell</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+      <node id="physical_tiredness">
+        <name>physical_tiredness</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+      <node id="mental_fatigue">
+        <name>mental_fatigue</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+      <node id="sweating">
+        <name>sweating</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+      <node id="tremor">
+        <name>tremor</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+      <node id="rigidity">
+        <name>rigidity</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+      <node id="dyskinesias">
+        <name>dyskinesias</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+      <node id="fluctuations">
+        <name>fluctuations</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+      <node id="bradykinesia">
+        <name>bradykinesia</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+      <node id="axial_no_pigd">
+        <name>axial_no_pigd</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+      <node id="pigd">
+        <name>pigd</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+      <node id="LatentVar">
+        <name>LatentVar</name>
+        <interior color="e5f6f7"/>
+        <outline color="000080"/>
+        <font bold="true" color="000080" name="Arial" size="10"/>
+        <position>100 100 100 100</position>
+        <barchart active="true" height="110" width="160"/>
+      </node>
+    </genie>
+  </extensions>
+</smile>

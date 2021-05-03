@@ -1,0 +1,9 @@
+{
+  "learningTime": 9.1,
+  "elbo": 4357.0210663870785,
+  "logLikelihood": 4542.920839306231,
+  "bic": 4396.007763135065,
+  "aic": 4493.920839306231,
+  "nVbsemCandidates": 0,
+  "nVbemCandidates": 1
+}
