@@ -1,4 +1,6 @@
 # parkinson-multidimensional-clustering
+[![Build Status](https://travis-ci.com/ferjorosa/incremental-latent-forests.png?branch=master)](https://travis-ci.com/ferjorosa/parkinson-multidimensional-clustering) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+
 This is the code repository of the paper **Identifying Parkinson's disease subtypes via multidimensional clustering** (Movement Disorders) [1]. It includes the following: 
 
 * A Java implementation of the *greedy latent structure learner* (GLSL) algorithm [1] (see Appendix B).

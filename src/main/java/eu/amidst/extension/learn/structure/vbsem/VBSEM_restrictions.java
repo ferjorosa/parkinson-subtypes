@@ -12,14 +12,12 @@ import eu.amidst.extension.learn.parameter.VBEMConfig;
 import eu.amidst.extension.learn.structure.hillclimber.BayesianHc;
 import eu.amidst.extension.learn.structure.hillclimber.BayesianHcConfig;
 import eu.amidst.extension.learn.structure.hillclimber.BayesianHcResult;
-import eu.amidst.extension.learn.structure.hillclimber.operator.BayesianHcAddArc;
 import eu.amidst.extension.learn.structure.hillclimber.operator.BayesianHcOperator;
 import eu.amidst.extension.util.DagSampler;
 import eu.amidst.extension.util.LogUtils;
 import eu.amidst.extension.util.PriorsFromData;
 import eu.amidst.extension.util.tuple.Tuple2;
 import eu.amidst.extension.util.tuple.Tuple3;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
 
 import java.util.*;
 import java.util.stream.Collectors;
