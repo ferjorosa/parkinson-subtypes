@@ -14,10 +14,10 @@ In addition, this repository provides the scripts, data and instructions necessa
 This project is organized in several folders:
 
 * **documentation**. It contains information about the MDS-NMS and the MDS-UPDRS, as well as a Codebook with the meaning of the variables considered in the study.
-* **data**. It contains the original data and the transformed data necessary for executing the experiments.
-* **src**. Main repository of source code. It contains the Java implementations as well as the code necessary for executing the experiments.
+* **data**. It contains the original data and the transformed data necessary for learning the clustering models.
+* **src**. Main repository of source code. It contains the Java implementations as well as the code necessary for learning the clustering models.
 * **python-project**. Secondary repository of source code. It contains the Python source code necessary for transforming the original data as well as for executing the article's comparative cluster analysis.
-* **results**. It contains the results of the experiments (i.e., models in AMIDST *.bn format, models in GENIE *.xdsl format, JSON files with scores and times, and completed data for those algorithms that could work with missing data).
+* **results**. It contains the results of the learning scripts (i.e., models in AMIDST *.bn format, models in GENIE *.xdsl format, JSON files with scores and times, and completed data for those algorithms that could work with missing data).
 * **best-model-genie**. For ease of use, it contains the best model in GENIE format. This model is necessary for executing the article's probabilistic inference analysis.
 
 ## Usage
