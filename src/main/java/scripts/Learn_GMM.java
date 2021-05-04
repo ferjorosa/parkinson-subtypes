@@ -11,6 +11,13 @@ import methods.GMM;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Learning script for the Gaussian mixture model (GMM) [1] without the restriction of diagional covariance matrix. Traditional
+ * implementation of GMM is not designed to work with missing data, so we use the imputed version of the data using MICE [2].
+ *
+ * [1] Dempster AP, Laird NM, Rubin DB. Maximum likelihood from incomplete data via the EM algorithm. J Roy Statist Soc: Series B. 1977;39(1):1–38.
+ * [2] Azur MJ, Stuart EA, Frangakis C, Leaf PJ. Multiple imputation by chained equations:  What is it and how does it work? Int J Methods Psychiatr Res. 2011;20(1):40–49.
+ */
 public class Learn_GMM {
 
     public static void main(String[] args) throws Exception {

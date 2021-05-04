@@ -27,6 +27,12 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+/**
+ * Learning script for the Constrained incremental learning (CIL) with alpha values of 1 and 10. It can work with
+ * missing data due to the Variational EM algorithm.
+ *
+ * Rodriguez-Sanchez F, Larrañaga P, Bielza C. Incremental learning of latent forests. IEEE Access. 2020;8:224420–224432.
+ * */
 public class Learn_CIL {
 
     public static void main(String[] args) throws Exception {

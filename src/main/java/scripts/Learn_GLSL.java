@@ -41,6 +41,16 @@ import java.util.Map;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+/**
+ * Learning script for the greedy latent structure learner (GLSL) algorithm. This method is dependent on the starting point
+ * so we tried several possibilities:
+ *
+ *   - Empty graph.
+ *   - Incremental learner result.
+ *   - Constrained incremental learner result. We tried alpha values of 1 and 10. They resulted in identical models.
+ *
+ * GLSL can work with missing data due to its internal Variational structural EM algorithm.
+ */
 public class Learn_GLSL {
 
     public static void main(String[] args) throws Exception {

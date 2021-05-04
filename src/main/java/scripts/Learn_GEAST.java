@@ -12,6 +12,13 @@ import methods.GMM;
 import java.util.List;
 import java.util.stream.Collectors;
 
+/**
+ * Learning script for the Gaussian version of the EAST algorithm. It was not designed not work with missing data so we use
+ * the imputed version of the dataset, which was imputed using MICE.
+ *
+ * [1] Poon LK, Zhang NL, Liu AH. Model-based clustering of high-dimensional data: Variable selection versus facet determination. Int J Approx Reasoning. 2013;54(1):196–215.
+ * [2] Azur MJ, Stuart EA, Frangakis C, Leaf PJ. Multiple imputation by chained equations:  What is it and how does it work? Int J Methods Psychiatr Res. 2011;20(1):40–49.
+ */
 public class Learn_GEAST {
 
     public static void main(String[] args) throws Exception {
