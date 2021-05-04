@@ -21,8 +21,8 @@ This project is organized in several folders:
 * **best-model-genie**. For ease of use, it contains the best model in GENIE format. This model is necessary for executing the article's probabilistic inference analysis.
 
 ## Usage
-* [Project installation](https://github.com/ferjorosa/parkinson-multidimensional-clustering/wiki/Project-installation)
-* [Overview and execution of the experiments](https://github.com/ferjorosa/parkinson-multidimensional-clustering/wiki/Executing-experiments)
+* [Project installation](https://github.com/ferjorosa/parkinson-multidimensional-clustering/wiki)
+* [Learning clustering models](https://github.com/ferjorosa/parkinson-multidimensional-clustering/wiki/Learn-clustering-models)
 * [Analysis of the results using the tool Genie](https://github.com/ferjorosa/parkinson-multidimensional-clustering/wiki/Analysis-with-Genie)
 
 ## Disclaimer
@@ -34,6 +34,6 @@ The data provided by this repository should not be used for independent publicat
 
 ## References
 
-* [1] [Rodriguez-Sanchez F., Rodriguez-Blazquez C., Bielza C., Larrañaga P., D. Weintraub, A. Schrag, A. Rizos, P. Martinez-Martin and K. Ray Chaudhuri. Identifying Parkinson's disease subtypes via multidimensional clustering. Movement Disorders. To be published.]()
+* [1] [Rodriguez-Sanchez F., Rodriguez-Blazquez C., Bielza C., Larrañaga P., D. Weintraub, A. Schrag, A. Rizos, P. Martinez-Martin and K. Ray Chaudhuri. Identifying Parkinson's disease subtypes via multidimensional clustering. Movement Disorders. In review.]()
 * [2] [Rodriguez-Sanchez F., Larrañaga P., Bielza C. Incremental learning of latent forests. IEEE Access. 2020;8:224420–224432.](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9207730)
 * [3] [Poon, L. K., Zhang, N. L., Liu, T., & Liu, A. H. (2013). Model-based clustering of high-dimensional data: Variable selection versus facet determination. International Journal of Approximate Reasoning, 54(1), 196-215.](https://www.sciencedirect.com/science/article/pii/S0888613X12001429/pdf?md5=6dd8ae15f83255027dddb8d4e160f5c7&pid=1-s2.0-S0888613X12001429-main.pdf).
