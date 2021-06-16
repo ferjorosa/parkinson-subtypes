@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <smile version="1.0" id="DAG" numsamples="10000" discsamples="10000">
 	<nodes>
-		<cpt id="H">
+		<cpt id="I">
 			<state id="Cluster_1" />
 			<state id="Cluster_2" />
 			<probabilities>0.7862323131120385 0.2137676868879615</probabilities>
@@ -42,16 +42,16 @@
 			<parents>B</parents>
 			<probabilities>0.7849134487217247 0.0343882453363816 0.1806983059418936 0.4008191465473815 0.2470442506317113 0.352136602820907</probabilities>
 		</cpt>
-		<cpt id="I">
+		<cpt id="H">
 			<state id="Cluster_2" />
 			<state id="Cluster_1" />
-			<parents>H</parents>
+			<parents>I</parents>
 			<probabilities>0.1494199329578163 0.8505800670421837 0.6777641399742955 0.3222358600257044</probabilities>
 		</cpt>
 		<cpt id="G">
 			<state id="Cluster_1" />
 			<state id="Cluster_2" />
-			<parents>H B</parents>
+			<parents>I B</parents>
 			<probabilities>0.9486089991382075 0.05139100086179259 0.8211799942722009 0.1788200057277991 0.7861856702619233 0.2138143297380767 0.201296751991273 0.7987032480087271</probabilities>
 		</cpt>
 		<equation id="pigd">
@@ -165,8 +165,8 @@
 			</discretization>
 		</equation>
 		<equation id="sweating">
-			<parents>I</parents>
-			<definition lower="0" upper="1">sweating=Choose(I,Normal(0.266888,0.0769594),Normal(0.000233265,0.000129376))</definition>
+			<parents>H</parents>
+			<definition lower="0" upper="1">sweating=Choose(H,Normal(0.266888,0.0769594),Normal(0.000233265,0.000129376))</definition>
 			<discretization>
 				<interval upper="0.1" />
 				<interval upper="0.2" />
@@ -405,8 +405,8 @@
 			</discretization>
 		</equation>
 		<equation id="anxiety">
-			<parents>I</parents>
-			<definition lower="0" upper="0.84375">anxiety=Choose(I,Normal(0.191864,0.0376398),Normal(0.0581673,0.00561683))</definition>
+			<parents>H</parents>
+			<definition lower="0" upper="0.84375">anxiety=Choose(H,Normal(0.191864,0.0376398),Normal(0.0581673,0.00561683))</definition>
 			<discretization>
 				<interval upper="0.08437500000000001" />
 				<interval upper="0.16875" />
@@ -444,7 +444,7 @@
 				<interior color="ffb7b7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>4078 1562 4078 1562</position>
+				<position>3767 1554 3767 1554</position>
 				<barchart active="true" width="160" height="220" />
 			</node>
 			<node id="anxiety">
@@ -452,7 +452,7 @@
 				<interior color="ffb7b7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>4982 1600 4982 1600</position>
+				<position>4671 1592 4671 1592</position>
 				<barchart active="true" width="160" height="220" />
 			</node>
 			<node id="apathy">
@@ -460,7 +460,7 @@
 				<interior color="ffb7b7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>603 1312 603 1312</position>
+				<position>292 1304 292 1304</position>
 				<barchart active="true" width="160" height="220" />
 			</node>
 			<node id="psychosis">
@@ -468,7 +468,7 @@
 				<interior color="ffb7b7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>2083 1502 2083 1502</position>
+				<position>1772 1494 1772 1494</position>
 				<barchart active="true" width="160" height="220" />
 			</node>
 			<node id="impulse_control">
@@ -476,7 +476,7 @@
 				<interior color="ffb7b7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>1344 627 1344 627</position>
+				<position>1033 619 1033 619</position>
 				<barchart active="true" width="160" height="220" />
 			</node>
 			<node id="cognition">
@@ -484,7 +484,7 @@
 				<interior color="ffb7b7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>796 1312 796 1312</position>
+				<position>485 1304 485 1304</position>
 				<barchart active="true" width="160" height="220" />
 			</node>
 			<node id="hypotension">
@@ -492,7 +492,7 @@
 				<interior color="ffb7b7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>3405 1518 3405 1518</position>
+				<position>3094 1510 3094 1510</position>
 				<barchart active="true" width="160" height="220" />
 			</node>
 			<node id="urinary">
@@ -500,7 +500,7 @@
 				<interior color="ffb7b7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>989 1312 989 1312</position>
+				<position>678 1304 678 1304</position>
 				<barchart active="true" width="160" height="220" />
 			</node>
 			<node id="sexual">
@@ -508,7 +508,7 @@
 				<interior color="ffb7b7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>3709 1526 3709 1526</position>
+				<position>3398 1518 3398 1518</position>
 				<barchart active="true" width="160" height="220" />
 			</node>
 			<node id="gastrointestinal">
@@ -516,7 +516,7 @@
 				<interior color="ffb7b7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>1182 1312 1182 1312</position>
+				<position>871 1304 871 1304</position>
 				<barchart active="true" width="160" height="220" />
 			</node>
 			<node id="sleep">
@@ -524,7 +524,7 @@
 				<interior color="ffb7b7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>1375 1312 1375 1312</position>
+				<position>1064 1304 1064 1304</position>
 				<barchart active="true" width="160" height="220" />
 			</node>
 			<node id="pain">
@@ -532,7 +532,7 @@
 				<interior color="ffb7b7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>1576 1312 1576 1312</position>
+				<position>1265 1304 1265 1304</position>
 				<barchart active="true" width="160" height="220" />
 			</node>
 			<node id="weight_loss">
@@ -540,7 +540,7 @@
 				<interior color="ffb7b7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>4393 1569 4393 1569</position>
+				<position>4082 1561 4082 1561</position>
 				<barchart active="true" width="160" height="220" />
 			</node>
 			<node id="smell">
@@ -548,7 +548,7 @@
 				<interior color="ffb7b7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>2744 2267 2744 2267</position>
+				<position>2433 2259 2433 2259</position>
 				<barchart active="true" width="160" height="220" />
 			</node>
 			<node id="physical_tiredness">
@@ -556,7 +556,7 @@
 				<interior color="ffb7b7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>2439 1842 2439 1842</position>
+				<position>2128 1834 2128 1834</position>
 				<barchart active="true" width="160" height="220" />
 			</node>
 			<node id="mental_fatigue">
@@ -564,7 +564,7 @@
 				<interior color="ffb7b7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>2436 1500 2436 1500</position>
+				<position>2125 1492 2125 1492</position>
 				<barchart active="true" width="160" height="220" />
 			</node>
 			<node id="sweating">
@@ -572,7 +572,7 @@
 				<interior color="ffb7b7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>4741 1611 4741 1611</position>
+				<position>4430 1603 4430 1603</position>
 				<barchart active="true" width="160" height="220" />
 			</node>
 			<node id="tremor">
@@ -580,7 +580,7 @@
 				<interior color="e5f6f7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>906 1838 906 1838</position>
+				<position>595 1830 595 1830</position>
 				<barchart active="true" width="160" height="220" />
 			</node>
 			<node id="rigidity">
@@ -588,7 +588,7 @@
 				<interior color="e5f6f7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>658 1828 658 1828</position>
+				<position>347 1820 347 1820</position>
 				<barchart active="true" width="160" height="220" />
 			</node>
 			<node id="dyskinesias">
@@ -596,7 +596,7 @@
 				<interior color="e5f6f7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>1800 1506 1800 1506</position>
+				<position>1489 1498 1489 1498</position>
 				<barchart active="true" width="160" height="220" />
 			</node>
 			<node id="fluctuations">
@@ -604,7 +604,7 @@
 				<interior color="e5f6f7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>2749 1851 2749 1851</position>
+				<position>2438 1843 2438 1843</position>
 				<barchart active="true" width="160" height="220" />
 			</node>
 			<node id="bradykinesia">
@@ -612,7 +612,7 @@
 				<interior color="e5f6f7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>3073 2264 3073 2264</position>
+				<position>2762 2256 2762 2256</position>
 				<barchart active="true" width="160" height="220" />
 			</node>
 			<node id="axial_no_pigd">
@@ -620,7 +620,7 @@
 				<interior color="e5f6f7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>3072 1852 3072 1852</position>
+				<position>2761 1844 2761 1844</position>
 				<barchart active="true" width="160" height="220" />
 			</node>
 			<node id="pigd">
@@ -628,7 +628,7 @@
 				<interior color="e5f6f7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>1690 625 1690 625</position>
+				<position>1379 617 1379 617</position>
 				<barchart active="true" width="160" height="220" />
 			</node>
 			<node id="G">
@@ -636,15 +636,15 @@
 				<interior color="62b0ff" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>4210 1253 4210 1253</position>
+				<position>3899 1245 3899 1245</position>
 				<barchart active="true" width="160" height="110" />
 			</node>
-			<node id="I">
-				<name>I</name>
+			<node id="H">
+				<name>H</name>
 				<interior color="e5f6f7" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>4838 1285 4838 1285</position>
+				<position>4527 1277 4527 1277</position>
 				<barchart active="true" width="160" height="110" />
 			</node>
 			<node id="B">
@@ -652,7 +652,7 @@
 				<interior color="62b0ff" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>2611 660 2611 660</position>
+				<position>2300 652 2300 652</position>
 				<barchart active="true" width="160" height="110" />
 			</node>
 			<node id="C">
@@ -660,7 +660,7 @@
 				<interior color="62b0ff" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>1955 1221 1955 1221</position>
+				<position>1644 1213 1644 1213</position>
 				<barchart active="true" width="160" height="110" />
 			</node>
 			<node id="A">
@@ -668,7 +668,7 @@
 				<interior color="62b0ff" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>1513 310 1513 310</position>
+				<position>1202 302 1202 302</position>
 				<barchart active="true" width="160" height="110" />
 			</node>
 			<node id="F">
@@ -676,15 +676,15 @@
 				<interior color="62b0ff" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>3564 1215 3564 1215</position>
+				<position>3253 1207 3253 1207</position>
 				<barchart active="true" width="160" height="110" />
 			</node>
-			<node id="H">
-				<name>H</name>
+			<node id="I">
+				<name>I</name>
 				<interior color="62b0ff" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>4515 954 4515 954</position>
+				<position>4204 946 4204 946</position>
 				<barchart active="true" width="160" height="110" />
 			</node>
 			<node id="E">
@@ -692,7 +692,7 @@
 				<interior color="62b0ff" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>2858 1460 2858 1460</position>
+				<position>2547 1452 2547 1452</position>
 				<barchart active="true" width="160" height="110" />
 			</node>
 			<node id="D">
@@ -700,13 +700,13 @@
 				<interior color="62b0ff" />
 				<outline color="000080" />
 				<font color="000080" name="Arial" size="10" bold="true" />
-				<position>2565 1214 2565 1214</position>
+				<position>2254 1206 2254 1206</position>
 				<barchart active="true" width="160" height="110" />
 			</node>
 			<textbox>
 				<caption>Note that GeNIe works with variances and not with standard deviations (in case you look at the definition CPDs)</caption>
 				<font color="000000" name="Arial" size="24" />
-				<position>2158 63 2998 135</position>
+				<position>1847 55 2687 127</position>
 			</textbox>
 		</genie>
 	</extensions>
