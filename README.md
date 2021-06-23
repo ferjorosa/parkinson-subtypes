@@ -1,7 +1,7 @@
-# parkinson-multidimensional-clustering
+# parkinson-subtypes
 [![Build Status](https://travis-ci.com/ferjorosa/incremental-latent-forests.png?branch=master)](https://travis-ci.com/ferjorosa/parkinson-multidimensional-clustering) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-This is the code repository of the paper **Identifying Parkinson's disease subtypes via multidimensional clustering** (Movement Disorders) [1]. It includes the following: 
+This is the code repository of the paper **Identifying Parkinson's disease subtypes via multidimensional clustering** (PLOS One) [1]. It includes the following: 
 
 * A Java implementation of the *greedy latent structure learner* (GLSL) algorithm [1] (see Appendix B).
 * A copy of the Java implementation of the *incremental learner* (IL) and the *constrained incremental learner* (CIL) algorithms [2] used as initialization for GLSL. [Original Github repository](https://github.com/ferjorosa/incremental-latent-forests).
@@ -34,6 +34,6 @@ The data provided by this repository should not be used for independent publicat
 
 ## References
 
-* [1] [Rodriguez-Sanchez F., Rodriguez-Blazquez C., Bielza C., Larrañaga P., D. Weintraub, A. Schrag, A. Rizos, P. Martinez-Martin and K. Ray Chaudhuri. Identifying Parkinson's disease subtypes via multidimensional clustering. Movement Disorders. In review.]()
+* [1] [Rodriguez-Sanchez F., Rodriguez-Blazquez C., Bielza C., Larrañaga P., D. Weintraub, A. Schrag, A. Rizos, P. Martinez-Martin and K. Ray Chaudhuri. Identifying Parkinson's disease subtypes via multidimensional clustering. PLOS One. Under review.]()
 * [2] [Rodriguez-Sanchez F., Larrañaga P., Bielza C. Incremental learning of latent forests. IEEE Access. 2020;8:224420–224432.](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=9207730)
 * [3] [Poon, L. K., Zhang, N. L., Liu, T., & Liu, A. H. (2013). Model-based clustering of high-dimensional data: Variable selection versus facet determination. International Journal of Approximate Reasoning, 54(1), 196-215.](https://www.sciencedirect.com/science/article/pii/S0888613X12001429/pdf?md5=6dd8ae15f83255027dddb8d4e160f5c7&pid=1-s2.0-S0888613X12001429-main.pdf).
