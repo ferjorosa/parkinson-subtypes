@@ -1,5 +1,5 @@
 # parkinson-subtypes
-[![Build Status](https://travis-ci.com/ferjorosa/incremental-latent-forests.png?branch=master)](https://travis-ci.com/ferjorosa/parkinson-multidimensional-clustering) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+[![Build Status](https://app.travis-ci.com/ferjorosa/parkinson-subtypes.svg?branch=main)](https://app.travis-ci.com/ferjorosa/parkinson-subtypes) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 This is the code repository of the paper **Identifying Parkinson's disease subtypes with motor and non-motor symptoms via model-based multi-partition clustering**. It includes the scripts, data and instructions necessary to reproduce the results included in the article. 
 
