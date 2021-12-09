@@ -1,7 +1,7 @@
 # parkinson-subtypes
 [![Build Status](https://app.travis-ci.com/ferjorosa/parkinson-subtypes.svg?branch=main)](https://app.travis-ci.com/ferjorosa/parkinson-subtypes) [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
-This is the code repository of the paper **Identifying Parkinson's disease subtypes with motor and non-motor symptoms via model-based multi-partition clustering**. It includes the scripts, data and instructions necessary to reproduce the results included in the article. 
+This is the code repository of the paper [Identifying Parkinson's disease subtypes with motor and non-motor symptoms via model-based multi-partition clustering](https://www.nature.com/articles/s41598-021-03118-w) (Nature Scientific Reports). 
 
 ## Project organization
 This project is organized in several folders:
